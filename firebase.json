@@ -1,3 +1,22 @@
+I have a react app that uses react-router with a Router that looks like:
+
+<Router>
+  <div>
+    <Route exact path="/" component={Homepage} />
+    <Route path="/map/:uid" component={Userpage} />
+    <Footer />
+  </div>
+</Router>
+The app is hosted using Firebase hosting.
+
+If I open my website and click around such that the router takes me to /map/uid, it loads fine. But if I close the browser and then try to explicitly navigate to <domain>/map/<known uid>, I get a "no page found" page from Firebase. This is my first time using react-router.
+
+enter image description here
+
+Update #1
+
+I have updated my firebase.json to:
+
 {
   "hosting": {
     "public": "build",
@@ -5,6 +24,12 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
