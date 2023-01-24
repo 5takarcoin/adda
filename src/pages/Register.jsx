@@ -55,7 +55,13 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Adda</span>
+        <span className="logo">
+          <img
+            className="logo"
+            src="https://cdn.discordapp.com/attachments/913539818246533132/1066120463769665586/image.png"
+            alt=""
+          />
+        </span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="nick name" />
@@ -70,7 +76,10 @@ const Register = () => {
           {error && <span>{errorMessage}</span>}
         </form>
         <p>
-          Already have an account? <Link to="/login">Login</Link>
+          Already have an account?{" "}
+          <Link class="link" to="/login">
+            Login
+          </Link>
         </p>
       </div>
     </div>

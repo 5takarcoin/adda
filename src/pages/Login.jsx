@@ -28,7 +28,13 @@ const Login = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Adda</span>
+        <span className="logo">
+          <img
+            className="logo"
+            src="https://cdn.discordapp.com/attachments/913539818246533132/1066120463769665586/image.png"
+            alt=""
+          />
+        </span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
@@ -37,7 +43,10 @@ const Login = () => {
           {error && <span>{errorMessage}</span>}
         </form>
         <p>
-          Don't have an account? <Link to="/register">Register</Link>
+          Don't have an account?{" "}
+          <Link class="link" to="/register">
+            Register
+          </Link>
         </p>
       </div>
     </div>
