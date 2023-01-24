@@ -23,7 +23,7 @@ const Chat = () => {
         <Input />
       ) : (
         <div className="selectAnUser">
-          <span>Select an User form Left</span>
+          <span>Select an User from Left</span>
           <br />
           <span>Find if you don't have any</span>
         </div>
