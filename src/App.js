@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <span className="version">Version - 1.0.1</span>
+      <span className="version">Version - 1.0.2</span>
       <BrowserRouter>
         <Routes>
           <Route path="/">
