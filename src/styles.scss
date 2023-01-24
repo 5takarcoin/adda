@@ -2,6 +2,13 @@ body {
   background-color: #415a77;
 }
 
+.version {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+
 .formContainer {
   height: 100vh;
   display: flex;
