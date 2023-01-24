@@ -40,7 +40,7 @@ const Login = () => {
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
           <button>Sign in</button>
-          {error && <span>{errorMessage}</span>}
+          {error && <div className="error">{errorMessage}</div>}
         </form>
         <p>
           Don't have an account?{" "}

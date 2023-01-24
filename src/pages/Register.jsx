@@ -73,7 +73,7 @@ const Register = () => {
           </label>
           <input type="file" id="file" style={{ display: "none" }} />
           <button>Sign up</button>
-          {error && <span>{errorMessage}</span>}
+          {error && <div className="error">{errorMessage}</div>}
         </form>
         <p>
           Already have an account?{" "}
