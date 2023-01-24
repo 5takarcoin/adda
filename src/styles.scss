@@ -236,6 +236,12 @@ body {
             border-radius: 50%;
             object-fit: cover;
           }
+
+          span {
+            font-size: 12px;
+            width: 60px;
+            text-align: center;
+          }
         }
 
         .messageContent {

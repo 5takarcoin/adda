@@ -11,7 +11,9 @@ const Message = ({ message }) => {
   }, [message]);
 
   const processDate = (s) => {
-    return new Date(s * 1000).toTimeString().split(" ")[0];
+    if (new Date(new Date().getTime() - s * 1000) < 86400000)
+      return new Date(s * 1000).toTimeString().split(" ")[0];
+    return new Date(s * 1000).toDateString();
   };
 
   return (
